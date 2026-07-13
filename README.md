@@ -3,3 +3,97 @@ Ein dezentrales P2P-KI-Compute-Netzwerk. Project Helios verbindet das Nützliche
 Weitere Informationen folgen nach der closed Alpha.
 
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werde ein GENESIS-Node</title>
+    <style>
+        body {
+            background-color: #0a0e14;
+            color: #a0aec0;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            padding: 40px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+        }
+        h2 { color: #00d4ff; text-align: center; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-size: 0.9rem; }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #030712;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            color: white;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #065f46;
+            color: #34d399;
+            border: 1px solid #10b981;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .footer { text-align: center; margin-top: 20px; font-size: 0.8rem; }
+        a { color: #00d4ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Werde closed-alpha Tester</h2>
+    
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="0d215d24-7063-400a-a033-60114df493c2">
+
+        <div style="display: flex; gap: 20px;">
+            <div class="form-group" style="flex: 1;">
+                <label>Handle / Nickname</label>
+                <input type="text" name="nickname" placeholder="NeonRunner" required>
+            </div>
+            <div class="form-group" style="flex: 1;">
+                <label>E-Mail</label>
+                <input type="email" name="email" placeholder="du@example.com" required>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <div class="form-group" style="flex: 1;">
+                <label>Hardware (GPU/CPU)</label>
+                <input type="text" name="hardware" placeholder="RTX 4070, Ryzen 7...">
+            </div>
+            <div class="form-group" style="flex: 1;">
+                <label>Erfahrung</label>
+                <input type="text" name="erfahrung" placeholder="Aufbau-/Strategie-Games, P2P, ...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Warum du? (dein Pitch an uns)</label>
+            <textarea name="pitch" rows="4" placeholder="Ich will Server crashen und das Beste rausholen..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Empfehlungscode (optional)</label>
+            <input type="text" name="code" placeholder="z. B. 46PH2H">
+        </div>
+        <button type="submit"> Bewerbung absenden</button>
+    </form>
+</div>
+
+</body>
+</html>
